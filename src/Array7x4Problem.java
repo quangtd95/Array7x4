@@ -37,12 +37,12 @@ public class Array7x4Problem {
                 problem.printArray();
                 isSuccess = true;
             } else {
-                if (problem.isMissingRowCol(problem.pointsInSameRowMap, SET_TYPE.ROW)) {
+//                if (problem.isMissingRowCol(problem.pointsInSameRowMap, SET_TYPE.ROW)) {
                     problem.deltaY += d;
-                }
-                if (problem.isMissingRowCol(problem.pointsInSameColMap, SET_TYPE.COLUMN)) {
+//                }
+//                if (problem.isMissingRowCol(problem.pointsInSameColMap, SET_TYPE.COLUMN)) {
                     problem.deltaX += d;
-                }
+//                }
 
                 if (numOfTimeProcess > maxNbOfTimesCanTry) {
                     System.out.println("can't resolve this problem");
@@ -91,16 +91,24 @@ public class Array7x4Problem {
 
     private static List<Point> prepareInput3() {
         List<Point> listPoint = new ArrayList<>();
-        listPoint.add(new Point((194.08156575395296f), (964.4136457128164f)));
-        listPoint.add(new Point((78.77138303523995f), (966.0709521279734f)));
-        listPoint.add(new Point((75.94603775853776f), (735.0707972582973f)));
-        listPoint.add(new Point((192.03572567783095f), (618.3061492114124f)));
-        listPoint.add(new Point((73.7317786335758f), (618.5159392383398f)));
-        listPoint.add(new Point((455.86884005327516f), (615.3735016345804f)));
-        listPoint.add(new Point((73.38489055167207f), (503.6159299005612f)));
-        listPoint.add(new Point((189.36872338318312f), (502.3841074906738f)));
-        listPoint.add(new Point((454.8481035252119f), (382.9987059348505f)));
-        listPoint.add(new Point((454.74391546501863f), (267.09056229495684f)));
+        listPoint.add(new Point((1677.964803843622f), (1912.7456336077557f)));
+        listPoint.add(new Point((1394.3213005877012f), (1911.4552375491742f)));
+        listPoint.add(new Point((1173.6681040058643f), (1910.5507668204618f)));
+        listPoint.add(new Point((1174.9455358533385f), (1695.6070038044809f)));
+        listPoint.add(new Point((1901.58394300706f), (1693.40399860646f)));
+        listPoint.add(new Point((1678.774407963131f), (1479.2368720480015f)));
+        listPoint.add(new Point((1396.9463531610638f), (1477.8987101836422f)));
+        listPoint.add(new Point((1901.5575081381464f), (1478.027527978905f)));
+        listPoint.add(new Point((1176.7873542760524f), (1475.9797024710035f)));
+        listPoint.add(new Point((1685.161460469355f), (1262.9623148781043f)));
+        listPoint.add(new Point((1900.2377143204417f), (1265.184081983029f)));
+        listPoint.add(new Point((1396.538142517066f), (1261.7187813637909f)));
+        listPoint.add(new Point((1177.630398913704f), (1259.2353930322336f)));
+        listPoint.add(new Point((1898.4399288306379f), (1051.814439981679f)));
+        listPoint.add(new Point((1398.2012551004598f), (1047.9900831568618f)));
+        listPoint.add(new Point((1179.3155375005458f), (1046.0208098545406f)));
+        listPoint.add(new Point((1895.8274408460254f), (842.1028481882663f)));
+        listPoint.add(new Point((1893.5064075201806f), (634.623953027328f)));
         return listPoint;
     }
 
